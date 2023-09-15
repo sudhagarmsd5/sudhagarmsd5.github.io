@@ -16,7 +16,7 @@ import Footer from "@components/sections/footer";
 import About from "@components/sections/about";
 
 export default async function Home(props: any) {
-  const res = await getStaticProps();
+  const res = await getData();
 
   return (
     <div className="pt-5 xl:pt-10">
@@ -43,7 +43,7 @@ export default async function Home(props: any) {
   );
 }
 
-export async function getStaticProps() {
+async function getData() {
   const query = gql`
     query {
       user(username: "sudhagar") {

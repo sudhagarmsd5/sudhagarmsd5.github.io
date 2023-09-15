@@ -1,7 +1,7 @@
 "use client";
 
 import SectionHeading from "@components/section-heading";
-
+import Image from 'next/image'
 export default function Tech() {
   const tech = [
     "angular",
@@ -29,11 +29,10 @@ export default function Tech() {
               className="flex items-center justify-center glass-card"
               key={item}
             >
-              <img
+              <Image
                 src={`assets/images/tech-stack/${item}.svg`}
                 alt={item}
-                width="90px"
-                height="90px"
+                style={{width:"80px",height:"90px"}}
               />
             </article>
           );

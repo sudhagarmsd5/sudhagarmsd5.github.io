@@ -5,10 +5,9 @@ export default function Intro() {
   return (
     <section className="relative py-10 xl:py-40 2xl:py-60" id="home">
       <div className="absolute top-0 w-full xl:top-10 2xl:top-16">
-        <img
+        <Image
           src="/assets/images/developer.svg"
-          width="100%"
-          height="100%"
+          style={{width:"100%",height:"100%"}}
           alt="developer"
         />
       </div>

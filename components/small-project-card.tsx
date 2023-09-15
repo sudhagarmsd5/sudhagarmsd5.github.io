@@ -60,9 +60,8 @@ export default function SmallProjectCard({ project }: any) {
             {project.technologies.map((tech: any) => {
               return (
                 <article key={tech.name}>
-                  <img
-                    width="40px"
-                    height="40px"
+                  <Image
+                    style={{width:"40px",height:"40px"}}
                     src={`/assets/images/tech-stack/${tech.icon}.svg`}
                     alt={tech.name}
                   />

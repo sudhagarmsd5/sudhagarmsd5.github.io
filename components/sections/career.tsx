@@ -1,7 +1,7 @@
 "use client";
 
 import SectionHeading from "@components/section-heading";
-
+import Image from 'next/image'
 interface jobs {
   jobs: any[];
 }
@@ -15,11 +15,11 @@ export default function Career({ jobs }: jobs) {
           return (
             <article key={item.company} className="relative job-card">
               <header className="flex flex-wrap mb-2">
-                <img
+                <Image
                   src={`/assets/images/job/${item.logo}`}
                   alt={item.company}
-                  height="50"
-                  width="50"
+                  height={50}
+                  width={50}
                 />
                 <div className="block ml-4 md:hidden">
                   <div className="flex items-center">

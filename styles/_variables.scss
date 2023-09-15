@@ -1,0 +1,12 @@
+:root {
+  --primary: #4b8bed;
+  --primary-gradient: linear-gradient(to right, #3ec7e0, #526bf4);
+
+  --dark: hsl(194, 100%, 4%);
+  --darker: hsl(177, 100%, 4%);
+  --dark-gradient: linear-gradient(
+    180deg,
+    hsl(194, 100%, 4%) 0%,
+    hsl(177, 100%, 4%) 100%
+  );
+}

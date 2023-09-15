@@ -5,6 +5,7 @@ const nextConfig = {
   /* config options here */
   trailingSlash: true,
   output: 'export',
+  basePath:""
 }
 
 module.exports = nextConfig

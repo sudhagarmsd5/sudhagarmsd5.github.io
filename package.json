@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:static": "serve ./out"
   },
   "dependencies": {
     "@types/node": "20.3.2",
@@ -28,6 +29,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "encoding": "^0.1.13"
+    "encoding": "^0.1.13",
+    "serve": "^14.2.1"
   }
 }

@@ -1,8 +1,10 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  images: {
-    domains: ["cdn.hashnode.com"],
-  },
-};
+  /* config options here */
+  trailingSlash: true,
+  output: 'export',
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

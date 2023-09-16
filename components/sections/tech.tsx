@@ -32,7 +32,8 @@ export default function Tech() {
               <Image
                 src={`assets/images/tech-stack/${item}.svg`}
                 alt={item}
-                style={{width:"80px",height:"90px"}}
+                width={80}
+                height={90}
               />
             </article>
           );

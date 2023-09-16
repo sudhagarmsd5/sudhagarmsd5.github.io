@@ -61,7 +61,8 @@ export default function SmallProjectCard({ project }: any) {
               return (
                 <article key={tech.name}>
                   <Image
-                    style={{width:"40px",height:"40px"}}
+                    width={40}
+                    height={40}
                     src={`/assets/images/tech-stack/${tech.icon}.svg`}
                     alt={tech.name}
                   />

@@ -13,7 +13,10 @@ export default function SectionHeading({ heading, subheading }: heading) {
         <div className="">
           <Image
             src={`/assets/images/${subheading}.svg`}
-            style={{height:"50px"}}
+          width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: 'auto', height: '50px' }}
             className="h-12 lg:h-14"
             alt={heading}
           />

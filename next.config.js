@@ -5,7 +5,8 @@ const nextConfig = {
   /* config options here */
   trailingSlash: true,
   output: 'export',
-  basePath:""
+  basePath:"",
+  images: { unoptimized: true }
 }
 
 module.exports = nextConfig

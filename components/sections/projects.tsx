@@ -24,7 +24,7 @@ export default function Projects({ projects }: ProjectsProps) {
       </div>
       <div className="flex justify-center mt-10">
         <a
-          href="https://github.com/sudhagarmsd5"
+          href="https://github.com/sudhagarmsd5?tab=repositories"
           rel="noopener noreferrer"
           target="_blank"
           className="button primary"

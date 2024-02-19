@@ -46,25 +46,29 @@ export default async function Home(props: any) {
 async function getData() {
   const query = gql`
     query {
-      user(username: "sudhagar") {
-        publication {
-          posts(page: 0) {
-            title
-            coverImage
-            slug
-            cuid
-            totalReactions
-            brief
-            dateAdded
+      publication(host: "sudhagar.hashnode.dev") {
+        posts(first: 10) {
+          edges {
+            node {
+              title
+              slug
+              cuid
+              brief
+              publishedAt
+              reactionCount
+              coverImage {
+                url
+              }
+            }
           }
         }
       }
     }
   `;
-  const data: any = await request("https://api.hashnode.com/", query);
+  const data: any = await request("https://gql.hashnode.com/", query);
   return {
     props: {
-      posts: data.user.publication.posts,
+      posts: data.publication.posts.edges,
       jobs: JOBS,
       projects: PROJECTS,
     },

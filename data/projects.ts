@@ -83,4 +83,26 @@ export const PROJECTS = [
     },
     image: 'todo-list.png',
   },
+  {
+    title: 'Expense Tracker',
+    subtitle: '',
+    type: 'WEB',
+    description: `Comprehensive tool for managing finances effectively.`,
+    technologies: [
+      {
+        name: 'Next.Js',
+        icon: 'react',
+      },
+      {
+        name: 'Tailwind',
+        icon: 'tailwind',
+      }
+    ],
+    links: {
+      github: 'https://github.com/sudhagarmsd5/expense-tracker-web',
+      website: 'https://expense-tracker-web-nine.vercel.app/',
+      npm: null,
+    },
+    image: 'expense-tracker.png',
+  },
 ]

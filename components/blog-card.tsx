@@ -8,7 +8,7 @@ export default function BlogCard({ post }: any) {
     <article className="glass-card blog-card">
       <header className="relative w-full h-40 xl:h-52">
         <Image
-          src={post.coverImage}
+          src={post.coverImage.url}
           className="rounded-md"
           style={{ objectFit: "cover" }}
           alt={post.title}
@@ -36,7 +36,7 @@ export default function BlogCard({ post }: any) {
                 fill="#fff"
               />
             </svg>
-            <p>{post.totalReactions}</p>
+            <p>{post.reactionCount}</p>
           </div>
         </div>
         <p className="mt-2 text-sm line-clamp-3">{post.brief}</p>
